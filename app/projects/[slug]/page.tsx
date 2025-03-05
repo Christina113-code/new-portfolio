@@ -6,9 +6,10 @@ import MDXContent from '@/components/mdx-content'
 import { ArrowLeftIcon } from '@radix-ui/react-icons'
 import { getProjectBySlug, getProjects } from '@/lib/projects'
 import { notFound } from 'next/navigation'
+
 export async function generateStaticParams() {
   const projects = await getProjects()
-  const slugs = projects.map(project  => ({ slug: project.slug }))
+  const slugs = projects.map(project => ({ slug: project.slug }))
 
   return slugs
 }

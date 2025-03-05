@@ -1,7 +1,7 @@
 import React from 'react'
 import Projects from '@/components/projects'
 import {getProjects} from '@/lib/projects'
-const ProjectsPage = () => {
+const ProjectsPage = async () => {
     const projects = await getProjects();
   return (
     <section className="pb-24 pt-40">
