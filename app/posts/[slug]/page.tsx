@@ -58,9 +58,9 @@ export default async function Post({ params }: { params: { slug: string } }) {
           <MDXContent source={content} />
         </main>
 
-        <footer className='mt-16'>
+        {/* <footer className='mt-16'>
           <NewsletterForm />
-        </footer>
+        </footer> */}
       </div>
     </section>
   )
